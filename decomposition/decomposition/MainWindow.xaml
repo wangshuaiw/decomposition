@@ -1,0 +1,103 @@
+﻿<Window x:Class="decomposition.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:decomposition"
+        mc:Ignorable="d"
+        Title="decomposition" Height="520" Width="720">
+    <Grid OpacityMask="Black">
+        <Grid Name="grid" Height="470" Margin="10,10,0,0" Width="700" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <Label x:Name="label" Content="输入项：" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
+            <Label x:Name="label1" Content="𝜎𝑐" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" />
+            <Label x:Name="label2" Content="𝜎𝑛" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="label3" Content="𝜙𝑏" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="label4" Content="𝑖0"  Grid.Row="4" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="label5" Content="𝐴𝑤" Grid.Row="5" Grid.Column="0" HorizontalAlignment="Right" />
+            <Label x:Name="label6" Content="𝜆𝑤"  Grid.Row="6" Grid.Column="0" HorizontalAlignment="Right" />
+            <Label x:Name="label7" Content="𝛼0"  Grid.Row="7" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="label8" Content="𝜆𝑢"  Grid.Row="8" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="label9" Content="𝐴𝑢"  Grid.Row="9" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="label10" Content="𝜎𝑛𝑇" Grid.Row="10" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="label11" Content="𝛿e𝑚𝑠" Grid.Row="11" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="label12" Content="𝑘𝑠" Grid.Row="12" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="label13" Content="n" Grid.Row="13" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="label14" Content="K" Grid.Row="14" Grid.Column="0" HorizontalAlignment="Right"/>
+            <Label x:Name="label15" Content="𝛥𝛿𝑠" Grid.Row="15" Grid.Column="0" HorizontalAlignment="Right"/>
+
+            <!--𝜎𝑐 Uniaxial compressive strength of rock-->
+            <TextBox x:Name="txt_Sc" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--𝜎𝑛 Normal stress-->
+            <TextBox x:Name="txt_Sn" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120"/>
+            <!--𝜙𝑏 Basic friction angle-->
+            <TextBox x:Name="txt_Anb" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120"/>
+            <!--𝑖0 Initial inclination angle of critical waviness-->
+            <TextBox x:Name="txt_I0" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--𝐴𝑤 Amplitude of critical waviness-->
+            <TextBox x:Name="txt_Aw" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--𝜆𝑤 Wavelength of critical waviness-->
+            <TextBox x:Name="txt_Ww" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--𝛼0 Initial inclination angle of critical unevenness-->
+            <TextBox x:Name="txt_An0" Grid.Row="7" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--𝜆𝑢 Wavelength of critical unevenness-->
+            <TextBox x:Name="txt_Wu" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--𝐴𝑢 Amplitude of critical unevenness-->
+            <TextBox x:Name="txt_Au" Grid.Row="9" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--𝜎𝑛𝑇 Transitional normal stress-->
+            <TextBox x:Name="txt_Tn" Grid.Row="10" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--𝛿e𝑚𝑠 Maximum elastic shear displacement-->
+            <TextBox x:Name="txt_Dems" Grid.Row="11" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--𝑘𝑠 Joint shear stiffness -->
+            <TextBox x:Name="txt_ks" Grid.Row="12" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--n -->
+            <TextBox x:Name="txt_n" Grid.Row="13" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--K Dimensionless coefficient-->
+            <TextBox x:Name="txt_K" Grid.Row="14" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+            <!--𝛥𝛿𝑠 Incremental dilation-->
+            <TextBox x:Name="txt_Di" Grid.Row="15" Grid.Column="1" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" />
+
+            <Button x:Name="btn_Cal"  Grid.Row="1" Grid.Column="2" Width="75" Content="计算" VerticalAlignment="Center" HorizontalAlignment="Center" Click="btn_Cal_Click"/>
+            <Button x:Name="btn_Clear"  Grid.Row="2" Grid.Column="2" Width="75" Content="清空" VerticalAlignment="Center" HorizontalAlignment="Center" Click="btn_Clear_Click"/>
+
+            <Label x:Name="label16" Content="τ" Grid.Row="1" Grid.Column="3" HorizontalAlignment="Right"/>
+            <Label x:Name="label17" Content="𝛿𝑛" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Right"/>
+            <Label x:Name="label18" Content="𝛿𝑠" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Right"/>
+
+            <!--τ Shear stress-->
+            <TextBox x:Name="txt_Ss" Grid.Row="1" Grid.Column="4" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" IsReadOnly="True"  />
+            <!--𝛿𝑛 Joint dilation-->
+            <TextBox x:Name="txt_Dn" Grid.Row="2" Grid.Column="4" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" IsReadOnly="True"/>
+            <!--𝛿𝑠 shear displacement-->
+            <TextBox x:Name="txt_Ds" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Left" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="" Width="120" IsReadOnly="True"/>
+
+        </Grid>
+
+
+    </Grid>
+</Window>

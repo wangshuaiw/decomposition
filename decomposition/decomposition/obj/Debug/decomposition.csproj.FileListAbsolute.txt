@@ -1,0 +1,14 @@
+D:\study\decomposition\decomposition\decomposition\bin\Debug\decomposition.exe
+D:\study\decomposition\decomposition\decomposition\bin\Debug\decomposition.pdb
+D:\study\decomposition\decomposition\decomposition\obj\Debug\decomposition.csprojAssemblyReference.cache
+D:\study\decomposition\decomposition\decomposition\obj\Debug\MainWindow.g.cs
+D:\study\decomposition\decomposition\decomposition\obj\Debug\App.g.cs
+D:\study\decomposition\decomposition\decomposition\obj\Debug\decomposition_MarkupCompile.cache
+D:\study\decomposition\decomposition\decomposition\obj\Debug\decomposition_MarkupCompile.lref
+D:\study\decomposition\decomposition\decomposition\obj\Debug\MainWindow.baml
+D:\study\decomposition\decomposition\decomposition\obj\Debug\decomposition.g.resources
+D:\study\decomposition\decomposition\decomposition\obj\Debug\decomposition.Properties.Resources.resources
+D:\study\decomposition\decomposition\decomposition\obj\Debug\decomposition.csproj.GenerateResource.cache
+D:\study\decomposition\decomposition\decomposition\obj\Debug\decomposition.csproj.CoreCompileInputs.cache
+D:\study\decomposition\decomposition\decomposition\obj\Debug\decomposition.exe
+D:\study\decomposition\decomposition\decomposition\obj\Debug\decomposition.pdb
